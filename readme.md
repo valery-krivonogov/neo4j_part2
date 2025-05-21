@@ -305,10 +305,10 @@ MATCH (st:City {name:"Москва"}), p=(st)-[m:transit*]->(e:City), (d:Directi
 ```
 
 Графическое представление плана запроса :<br/>
-![Plan 1](/img/plan_1_1.jpg)
-![Plan 1](/img/plan_1_2.jpg)
-![Plan 1](/img/plan_1_3.jpg)
-![Plan 1](/img/plan_1_4.jpg)
+![Plan 1](/img/plan_1_1.jpg)<br/>
+![Plan 1](/img/plan_1_2.jpg)<br/>
+![Plan 1](/img/plan_1_3.jpg)<br/>
+![Plan 1](/img/plan_1_4.jpg)<br/>
 
 Добавить индексы для оптимизации запроса
 ```sql
@@ -318,6 +318,6 @@ create index dr for (m:Direction) on (m.name);
 ```
 
 Графическое представление плана запроса с учетом индексов:<br/>
-![Plan 2](/img/plan_2_1.jpg)
-![Plan 2](/img/plan_2_2.jpg)
+![Plan 2](/img/plan_2_1.jpg)<br/>
+![Plan 2](/img/plan_2_2.jpg)<br/>
 ![Plan 2](/img/plan_2_3.jpg)
